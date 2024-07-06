@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url("flower2.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow: hidden;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+    width: 100%;
+}
+
+.app-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    max-width: 800px;
+    margin: 20px;
+}
+
+.headings-container {
+    padding: 0 1rem;
+}
+
+.interaction-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 1rem;
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    margin-top: 1rem;
+}
+
+.text-control {
+    width: 80%;
+    height: auto;
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    margin: 5px auto;
+    font-size: 16px;
+    color: #000;
+    background: rgba(255, 255, 255, 0.5);
+}
+
+.text-control:focus-visible {
+    outline: none;
+}
+
+.error-para {
+    color: red;
+}
+
+.btn {
+    padding: 0.8rem;
+    background-image: linear-gradient(90deg, #F4244C, #1c0902);
+    border: 1px solid transparent;
+    border-radius: 10px;
+    color: #fff;
+    cursor: pointer;
+    transition: all 0.25s;
+    margin-top: 1rem;
+}
+
+.btn:hover {
+    padding: 1rem;
+}
+
+@media(max-width: 800px) {
+    .app-container {
+        width: 80vw;
+    }
+}
+
+@media(max-width: 600px) {
+    .app-container {
+        width: 90vw;
+    }
+}
+
+@media(max-width: 400px) {
+    .app-container {
+        width: 95vw;
+    }
+}
